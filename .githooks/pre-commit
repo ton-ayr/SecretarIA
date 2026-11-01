@@ -1,0 +1,3 @@
+#!/bin/sh
+# Barra o commit se algo sensível estiver indo para o repositório público.
+exec npm run --silent check:public

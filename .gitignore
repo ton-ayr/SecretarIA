@@ -1,0 +1,19 @@
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+dist/
+coverage/
+evals/results/
+*.log
+.DS_Store
+
+# Nunca para o repositório público
+.env
+.env.*
+*.pem
+*.key
+*service-account*.json
+*.bundle
+.claude/settings.local.json

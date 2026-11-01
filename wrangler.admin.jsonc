@@ -1,0 +1,30 @@
+{
+  // Worker "admin": painel do operador. Proteja com a aba Access do Worker
+  // (Cloudflare Access) e preencha ADMIN_EMAILS (npm run secrets -- enviar-admin).
+  // Ele não guarda segredos de integração: o que precisa deles passa pelo bot
+  // (service binding BOT → named entrypoint AdminRpc).
+  // Os dados do Access ficam no .dev.vars e vão junto em npm run deploy:admin.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "secretaria-admin",
+  "main": "src/admin/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  "assets": { "directory": "./src/admin/public" },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "secretaria"
+    }
+  ],
+  "services": [{ "binding": "BOT", "service": "secretaria-bot", "entrypoint": "AdminRpc" }],
+  "vars": {
+    "META_PRICE_BRL_MILLI": "35"
+  },
+  // Só para o wrangler dev: simula o login do Access.
+  "access": {
+    "dev": {
+      "aud": "secretaria-admin-local",
+      "identity": { "email": "operador@local.test" }
+    }
+  }
+}

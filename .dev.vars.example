@@ -1,0 +1,39 @@
+# Copie para .dev.vars e preencha.
+
+# Gerados automaticamente por: npm run secrets -- gerar
+META_VERIFY_TOKEN=
+ENCRYPTION_KEY=
+LOG_HASH_KEY=
+TELEGRAM_WEBHOOK_SECRET=
+
+# Meta for Developers > seu app > Configurações do app > Básico > Chave secreta do app
+META_APP_SECRET=
+# Token permanente do usuário do sistema. Fica só aqui: vai CIFRADO para o banco
+# (npm run meta -- conta) e nunca é enviado como secret do Worker.
+META_ACCESS_TOKEN=
+
+# IA: Groq e, como reserva, Cloudflare Workers AI
+GROQ_API_KEY=
+WORKERSAI_API_KEY=
+
+# Telegram: token do bot criado no @BotFather
+TELEGRAM_BOT_TOKEN=
+
+# Google Agenda da empresa: preenchido por  npm run google -- chave <arquivo.json>
+GOOGLE_SERVICE_ACCOUNT=
+
+# Identificam a sua conta: ficam fora do git e vão junto no deploy.
+# npm run deploy:bot
+WORKERSAI_ACCOUNT_ID=
+PUBLIC_BASE_URL=
+# npm run deploy:admin (aba Access do Worker do painel)
+ACCESS_TEAM_DOMAIN=
+ACCESS_AUD=
+
+# Só para npm run check:public: textos que nunca podem ir para o repositório
+# público, separados por vírgula (telefone real, ID da conta Meta, nome de cliente).
+PRIVATE_TERMS=
+
+# Painel: e-mails que podem entrar (separados por vírgula). Vai para o Worker
+# do painel com  npm run secrets -- enviar-admin
+ADMIN_EMAILS=
