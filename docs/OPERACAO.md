@@ -1,6 +1,6 @@
 # SecretárIA — Operação
 
-Como publicar, ligar as integrações e cadastrar empresas, e o que ainda falta.
+Como publicar, ligar as integrações e cadastrar empresas.
 Para rodar na sua máquina, veja o [README](../README.md#como-rodar). Como o
 sistema funciona está em [`ARQUITETURA.md`](ARQUITETURA.md).
 

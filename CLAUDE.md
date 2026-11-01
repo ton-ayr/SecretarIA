@@ -1,8 +1,8 @@
 # SecretárIA
 
 Atendente de WhatsApp com IA para negócios com hora marcada, multiempresa, em
-Cloudflare Workers. Como funciona: `docs/ARQUITETURA.md`. Publicação,
-integrações e pendências: `docs/OPERACAO.md`.
+Cloudflare Workers. Como funciona: `docs/ARQUITETURA.md`. Publicação e
+integrações: `docs/OPERACAO.md`.
 
 ## Comandos
 

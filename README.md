@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/ton-ayr/SecretarIA/actions/workflows/ci.yml"><img src="https://github.com/ton-ayr/SecretarIA/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
   <img src="https://img.shields.io/badge/TypeScript-estrito-3178C6?logo=typescript&logoColor=white" alt="TypeScript estrito">
   <img src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" alt="Cloudflare Workers">
   <img src="https://img.shields.io/badge/WhatsApp-Cloud%20API-25D366?logo=whatsapp&logoColor=white" alt="WhatsApp Cloud API">
@@ -170,7 +171,7 @@ Achou uma falha? Veja [`SECURITY.md`](SECURITY.md).
 ## Documentação
 
 - [`docs/ARQUITETURA.md`](docs/ARQUITETURA.md): como o sistema funciona, segurança, LGPD e integrações
-- [`docs/OPERACAO.md`](docs/OPERACAO.md): publicação, integrações, pendências e próximos passos
+- [`docs/OPERACAO.md`](docs/OPERACAO.md): publicação, integrações, cadastro de empresas e pedidos de exclusão
 
 ## Licença
 
